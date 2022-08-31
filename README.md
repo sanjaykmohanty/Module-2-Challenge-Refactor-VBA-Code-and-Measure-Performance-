@@ -143,9 +143,18 @@ Before refactoring the code, the original code that was developed to create the 
     End Sub
 
 
-The technique used in refactoring the code is simple but extremely efficient. Instead of reading the spreadsheet for each iteration while processing he data using a loop, arrays are defined in the code to store the information in memory and used in the code when required. this reducess the processing time while dealing with a large volume of data.
+The technique used in refactoring the code is simple but extremely efficient. Instead of reading the spreadsheet record by record from top to bottom for each iteration while processing the data in a loop, arrays are defined in the code to store the information in memory and used in the code when required. This reducess the processing substantially time while dealing with a large volume of data. 
 
+For instance, the original code took 0.6 seconds to process 2018 stock datadata and .5 seconds to process 2017 data. Where as after refactoring the code, it took .08 seconds to process 2018 data and .07 seconds to process 2017 data.
 
+### Original Code
+![image](https://user-images.githubusercontent.com/31812730/187798085-4242d5c7-bc85-4194-8666-c26ade4601d3.png)
+
+![image](https://user-images.githubusercontent.com/31812730/187798673-99e29782-c5ea-4c1d-bb85-05947fb70c20.png)
+
+### Code After Refactoring 
+![image](https://user-images.githubusercontent.com/31812730/187797788-db5ec34e-5adc-479b-a0be-6759811ab53d.png)
+![image](https://user-images.githubusercontent.com/31812730/187799043-4b1cdc3e-313e-4907-9a49-82056ed1df1a.png)
 
 ## Summary
 
