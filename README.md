@@ -11,7 +11,7 @@ The data includes two sheets with stock information of 12 different stocks. The 
 ## Results
 
 ### Analysis
-Before refactoring the code, the original code that was developed to create the input box, chart headers, ticker array, and to activate the appropriate worksheet was copied to a new file with .VBA extension. Next, the steps were listed out to set the structure for the refactoring. The instructions and the code written in the file are shown below.
+Before refactoring the code, the original code that was developed to create the input box, chart headers, ticker array, and to activate the appropriate worksheet was copied to a new file with .vba extension. Next, the steps were listed out to set the structure for the refactoring. The instructions and the code written in the file are shown below.
 
     Sub AllStocksAnalysisRefactored()
       Dim startTime As Single
@@ -85,7 +85,7 @@ Before refactoring the code, the original code that was developed to create the 
           End If
             
           '3c) check if the current row is the last row with the selected ticker
-          'If the next rowÃ¢â‚¬â„¢s ticker doesnÃ¢â‚¬â„¢t match, increase the tickerIndex.
+          'If the next row ticker does not match, increase the tickerIndex.
           'If  Then
         
           If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1).Value <> tickers(tickerIndex) Then
@@ -143,9 +143,9 @@ Before refactoring the code, the original code that was developed to create the 
     End Sub
 
 
-The technique used in refactoring the code is simple but extremely efficient. Instead of reading the spreadsheet record by record from top to bottom for each iteration while processing the data in a loop, arrays are defined in the code to store the information in memory and used in the code when required. This reducess the processing substantially time while dealing with a large volume of data. 
+The technique used in refactoring the code is simple but extremely efficient. Instead of reading the spreadsheet record by record from top to bottom for each iteration while processing the data in a loop, arrays are defined in the code to store the information in memory and used in the code when required. This reducess the processing time substantially while dealing with a large volume of data. 
 
-For instance, the original code took 0.6 seconds to process 2018 stock datadata and .5 seconds to process 2017 data. Where as after refactoring the code, it took .08 seconds to process 2018 data and .07 seconds to process 2017 data.
+For instance, the original code took 0.6 seconds to process 2018 stock datadata and 0.5 seconds to process 2017 data. Whereas after refactoring the code, it took .08 seconds to process 2018 data and .07 seconds to process 2017 data.
 
 ### Original Code
 ![image](https://user-images.githubusercontent.com/31812730/187798085-4242d5c7-bc85-4194-8666-c26ade4601d3.png)
@@ -160,6 +160,24 @@ For instance, the original code took 0.6 seconds to process 2018 stock datadata 
 
 ### Advantages and Disadvantages of Refactoring Code
 
-Refactoring helps make our code cleaner and more organized. A few advantages of a cleaner code include design and software improvement, debugging, and faster programming. It may also benefit other users who view our projects because it becomes easier to read, as it is more concise and straightforward. However, we do not always have the luxury to refactor our code due to disadvantages. These disadvantages may range from having applications that are too large to not having the proper test cases for the existing codes, which may ultimately pose some risk if we try to refactor our code.
+### Advantages
+Refactoring enhances comprehensibility, facilitates maintenance and the extendibility of the software
+
+The source code is restructured without altering its functionality
+
+Redundecies and duplications are removed to improve the effectiveness of the code
+
+Methods are used to make the section of the code self-contained which prevent local changes from effecting other parts of the code
+	
+Shorter, self-contained methods improve testability
+
+### Disadvantages
+Like any change, refactoring could introduce new bugs and errors into the code if not done correctly 
+
+It is difficult to convince the customer for the additional effort as the functionality stays the same
+
+Coordination effort becomes surprisingly high when larger teams are working on refactoring
 
 ### Advantages and Disadvantages of the Original and Refactored VBA Script
+
+Refactoring helped in making the code cleaner and a lot more organized. Cleaner code means easier to modify and debug. When other developer vew this code, it will be easier for them to read the code because it is more consise. Program execution time reduced substantially after refactoring.
