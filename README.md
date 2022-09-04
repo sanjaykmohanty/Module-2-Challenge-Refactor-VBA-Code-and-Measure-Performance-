@@ -180,4 +180,8 @@ Coordination effort becomes surprisingly high when larger teams are working on r
 
 ### Advantages and Disadvantages of the Original and Refactored VBA Script
 
-Refactoring helped in making the code cleaner and a lot more organized. Cleaner code means easier to modify and debug. When other developer vew this code, it will be easier for them to read the code because it is more consise. Program execution time reduced substantially after refactoring.
+Original code was satisfying the requrement but the code was tested for very small data volume. the code would not have worked efficiently for large volume of data.
+
+Refactoring helped in making the code cleaner and a lot more organized. Cleaner code means easier to modify and debug. When other developer vew this code, it will be easier for them to read the code because it is more consise. The biggest advantage was program execution time reduced substantially after refactoring.
+
+
