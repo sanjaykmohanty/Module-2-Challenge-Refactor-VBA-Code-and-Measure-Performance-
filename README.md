@@ -11,7 +11,7 @@ The data includes two sheets with stock information of 12 different stocks. The 
 ## Results
 
 ### Analysis
-Before refactoring the code, the original code that was developed to create the input box, chart headers, ticker array, and to activate the appropriate worksheet was copied to a new file with .vba extension. Next, the steps were listed out to set the structure for the refactoring. The instructions and the code written in the file are shown below.
+Before refactoring the code, the original code that was developed to create the input box, chart headers, ticker array, and to activate the appropriate worksheet was copied to a new file with ‘.vba’ extension. Next, the steps were listed out to set the structure for the refactoring. The instructions and the code written in the file are shown below.
 
     Sub AllStocksAnalysisRefactored()
       Dim startTime As Single
@@ -145,7 +145,7 @@ Before refactoring the code, the original code that was developed to create the 
 
 The technique used in refactoring the code is simple but extremely efficient. Instead of reading the spreadsheet record by record from top to bottom for each iteration while processing the data in a loop, arrays are defined in the code to store the information in memory and used in the code when required. This reducess the processing time substantially while dealing with a large volume of data. 
 
-For instance, the original code took 0.6 seconds to process 2018 stock datadata and 0.5 seconds to process 2017 data. Whereas after refactoring the code, it took .08 seconds to process 2018 data and .07 seconds to process 2017 data.
+For instance, the original code took 0.6 seconds to process 2018 stock data and 0.5 seconds to process 2017 data. Whereas after refactoring the code, it took .08 seconds to process 2018 data and .07 seconds to process 2017 data.
 
 ### Original Code
 ![image](https://user-images.githubusercontent.com/31812730/187798085-4242d5c7-bc85-4194-8666-c26ade4601d3.png)
@@ -180,8 +180,7 @@ Coordination effort becomes surprisingly high when larger teams are working on r
 
 ### Advantages and Disadvantages of the Original and Refactored VBA Script
 
-Original code was satisfying the requrement but the code was tested for very small data volume. the code would not have worked efficiently for large volume of data.
+Original code was satisfying the requirement, but the code was tested for very small data volume. the code would not have worked efficiently for large volume of data.
 
-Refactoring helped in making the code cleaner and a lot more organized. Cleaner code means easier to modify and debug. When other developer vew this code, it will be easier for them to read the code because it is more consise. The biggest advantage was program execution time reduced substantially after refactoring.
-
+Refactoring helped in making the code cleaner and a lot more organized. Cleaner code means easier to modify and debug. When other developer view this code, it will be easier for them to read the code because it is more concise. The biggest advantage was program execution time reduced substantially after refactoring.
 
