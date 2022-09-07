@@ -147,12 +147,12 @@ The technique used in refactoring the code is simple but extremely efficient. In
 
 For instance, the original code took 0.6 seconds to process 2018 stock data and 0.5 seconds to process 2017 data. Whereas after refactoring the code, it took .08 seconds to process 2018 data and .07 seconds to process 2017 data.
 
-### Original Code
+### Results of Original Code
 ![image](https://user-images.githubusercontent.com/31812730/187798085-4242d5c7-bc85-4194-8666-c26ade4601d3.png)
 
 ![image](https://user-images.githubusercontent.com/31812730/187798673-99e29782-c5ea-4c1d-bb85-05947fb70c20.png)
 
-### Code After Refactoring 
+### Results Code After Refactoring 
 ![image](https://user-images.githubusercontent.com/31812730/187797788-db5ec34e-5adc-479b-a0be-6759811ab53d.png)
 ![image](https://user-images.githubusercontent.com/31812730/187799043-4b1cdc3e-313e-4907-9a49-82056ed1df1a.png)
 
